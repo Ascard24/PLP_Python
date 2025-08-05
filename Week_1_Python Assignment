@@ -1,0 +1,24 @@
+# Basic Calculator Program
+
+# Get user input
+a = int(input(" "))
+op = input(" ")
+b = int(input(" "))
+
+if op == '+':
+    result = a + b
+    print(f"{a} + {b} = {result}")
+elif op == '-':
+    result = a - b
+    print(f"{a} - {b} = {result}")
+elif op == '*':
+    result = a * b
+    print(f"{a} * {b} = {result}")
+elif op == '/':
+    if b != 0:
+        result = a / b
+        print(f"{a} / {b} = {result}")
+    else:
+        print("Error: Cannot divide by zero.")
+else:
+    print("Invalid operator.")
